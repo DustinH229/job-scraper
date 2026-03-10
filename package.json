@@ -5,7 +5,7 @@
   "main": "./dist/index.js",
   "module": "./src/index.js",
   "scripts": {
-    "build": "babel src --out-dir dist && webpack  && rm dist/job-scraper.js",
+    "build": "babel src --out-dir dist && webpack && rm -f dist/job-scraper.js",
     "prepublishOnly": "npm run build",
     "test": "ava"
   },
